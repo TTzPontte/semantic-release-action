@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "==================== GITHUB_REPOSITORY"
+echo ${GITHUB_REPOSITORY}
+
+echo "==================== GITHUB_REF"
+echo ${GITHUB_REF}
+
+echo "==================== RUNNER_WORKSPACE"
+echo ${RUNNER_WORKSPACE}
+
+git fetch origin ${GITHUB_REF}:alpha
